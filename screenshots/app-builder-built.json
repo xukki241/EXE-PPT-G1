@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Pose-Booth · Hạ tầng",
+      "hasCanvas": false,
+      "bodyTextLen": 307,
+      "bodyTextHash": "3ec47306cd6408412983c0b2dc08b0d7ef7be61d5a1df94757b66220c81a8370",
+      "bodyTextPrefix": "POSE-BOOTH AI Slide gốc · 01/34 Bìa Nhóm Mục lục Quy mô Xu hướng",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Pose-Booth · Hạ tầng",
+      "hasCanvas": false,
+      "bodyTextLen": 307,
+      "bodyTextHash": "3ec47306cd6408412983c0b2dc08b0d7ef7be61d5a1df94757b66220c81a8370",
+      "bodyTextPrefix": "POSE-BOOTH AI Slide gốc · 01/34 Bìa Nhóm Mục lục Quy mô Xu hướng",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

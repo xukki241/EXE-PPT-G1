@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "@fontsource/be-vietnam-pro/400.css";
+@import "@fontsource/be-vietnam-pro/500.css";
+@import "@fontsource/be-vietnam-pro/600.css";
+@import "@fontsource/be-vietnam-pro/700.css";
+
+@theme {
+  --color-paper: #f3f6f2;
+  --color-desk: #e3e7e0;
+  --color-ink: #1a1816;
+  --color-maroon: #9a3d4c;
+  --color-card: #fffcf8;
+  --color-wash: #e4f0db;
+  --color-leaf: #6f8f58;
+  --color-sun: #f6d56b;
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-desk);
+    color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide-enter {
+    animation: none !important;
+  }
+}
+
+@keyframes slide-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slide-enter {
+  animation: slide-enter 220ms ease-out;
+}

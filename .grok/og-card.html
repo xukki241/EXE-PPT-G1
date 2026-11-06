@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face {
+  font-family: "Deck";
+  src: url("file:///usr/share/fonts/truetype/dejavu/DejaVuSans.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Deck";
+  src: url("file:///usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  width: 1200px;
+  height: 630px;
+  overflow: hidden;
+  background: #f3f6f2;
+}
+body {
+  font-family: "Deck", "DejaVu Sans", sans-serif;
+  color: #1a1816;
+  position: relative;
+}
+.banner {
+  height: 68px;
+  background: #9b3d4a;
+  display: flex;
+  align-items: center;
+  padding: 0 46px;
+  gap: 14px;
+  color: #f3f6f2;
+}
+.brand {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.18em;
+  line-height: 1;
+}
+.stage { padding: 26px 48px 0; }
+h1 {
+  font-size: 88px;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.kicker {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  line-height: 1;
+}
+.frame {
+  margin-top: 28px;
+  border: 2.5px solid #1a1816;
+  border-radius: 14px;
+  height: 260px;
+  position: relative;
+  background: #f7faf5;
+}
+.frame-label {
+  position: absolute;
+  top: -11px;
+  left: 22px;
+  background: #f3f6f2;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+.box {
+  position: absolute;
+  width: 176px;
+  height: 66px;
+  border: 2.5px solid #1a1816;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+.stem {
+  position: absolute;
+  background: #1a1816;
+}
+.arrow-head {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.footer {
+  position: absolute;
+  left: 48px;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  font-size: 14px;
+  line-height: 1;
+}
+.corner-leaf {
+  position: absolute;
+  right: 44px;
+  bottom: 16px;
+}
+</style>
+</head>
+<body>
+  <header class="banner">
+    <svg class="leaf" width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="#f3f6f2" d="M16.2 27.2c.15-5.6.3-8.6 1.9-12.2 1.05 2.9 1.25 5.8.55 12.2h-2.45z"/>
+      <path fill="#d7e3c8" d="M16.4 17.4C12.2 16.8 8.6 14.6 7.4 11.2c3.1-.1 6.2 1.3 9 4.4v1.8z"/>
+      <path fill="#f3f6f2" d="M17.1 14.6c3.5-2.1 7-2.5 8.8-1.2-1.2 3-4.2 4.7-8.8 4.9v-3.7z"/>
+    </svg>
+    <div class="brand">POSE-BOOTH AI</div>
+  </header>
+
+  <div class="stage">
+    <h1>HẠ TẦNG</h1>
+    <div class="kicker">KIẾN TRÚC ỨNG DỤNG LOCAL</div>
+
+    <div class="frame">
+      <div class="frame-label">DOCKER</div>
+
+      <div class="box" style="left:48px;top:34px;">Client</div>
+      <div class="stem" style="left:232px;top:65px;width:74px;height:2.5px;"></div>
+      <div class="arrow-head" style="left:304px;top:59px;border-width:7px 0 7px 10px;border-color:transparent transparent transparent #1a1816;"></div>
+
+      <div class="box" style="left:324px;top:34px;">Nginx</div>
+      <div class="stem" style="left:508px;top:65px;width:74px;height:2.5px;"></div>
+      <div class="arrow-head" style="left:580px;top:59px;border-width:7px 0 7px 10px;border-color:transparent transparent transparent #1a1816;"></div>
+
+      <div class="box" style="left:600px;top:34px;">FastAPI</div>
+      <div class="stem" style="left:784px;top:65px;width:74px;height:2.5px;"></div>
+      <div class="arrow-head" style="left:856px;top:59px;border-width:7px 0 7px 10px;border-color:transparent transparent transparent #1a1816;"></div>
+
+      <div class="box" style="left:876px;top:34px;">Redis</div>
+
+      <!-- FastAPI center = 600+88 = 688 -->
+      <div class="stem" style="left:687px;top:100px;width:2.5px;height:34px;"></div>
+      <div class="stem" style="left:572px;top:132px;width:233px;height:2.5px;"></div>
+      <div class="stem" style="left:571px;top:132px;width:2.5px;height:18px;"></div>
+      <div class="stem" style="left:803px;top:132px;width:2.5px;height:18px;"></div>
+
+      <div class="box" style="left:484px;top:150px;">Postgres</div>
+      <div class="box" style="left:716px;top:150px;">RabbitMQ</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <svg width="18" height="18" viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="#6f8f58" d="M16.2 27.2c.15-5.6.3-8.6 1.9-12.2 1.05 2.9 1.25 5.8.55 12.2h-2.45z"/>
+      <path fill="#6f8f58" d="M16.4 17.4C12.2 16.8 8.6 14.6 7.4 11.2c3.1-.1 6.2 1.3 9 4.4v1.8z"/>
+      <path fill="#8eae70" d="M17.1 14.6c3.5-2.1 7-2.5 8.8-1.2-1.2 3-4.2 4.7-8.8 4.9v-3.7z"/>
+    </svg>
+    <span>POSE-BOOTH AI</span>
+  </div>
+</body>
+</html>

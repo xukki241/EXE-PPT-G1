@@ -1,0 +1,5 @@
+{
+  "title": "Pose-Booth Hạ tầng",
+  "card": "custom",
+  "description": "Sơ đồ kiến trúc Pose-Booth AI — photobooth local, FastAPI, YOLO, MediaPipe."
+}
